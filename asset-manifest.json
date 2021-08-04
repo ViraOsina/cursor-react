@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cursor-react/static/css/main.0f0eaed8.chunk.css",
-    "main.js": "/cursor-react/static/js/main.45b64495.chunk.js",
-    "main.js.map": "/cursor-react/static/js/main.45b64495.chunk.js.map",
+    "main.css": "/cursor-react/static/css/main.ab12bc99.chunk.css",
+    "main.js": "/cursor-react/static/js/main.492bf494.chunk.js",
+    "main.js.map": "/cursor-react/static/js/main.492bf494.chunk.js.map",
     "runtime-main.js": "/cursor-react/static/js/runtime-main.9d5782f5.js",
     "runtime-main.js.map": "/cursor-react/static/js/runtime-main.9d5782f5.js.map",
     "static/js/2.1fadfbc2.chunk.js": "/cursor-react/static/js/2.1fadfbc2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.bbcf7c80.chunk.js": "/cursor-react/static/js/3.bbcf7c80.chunk.js",
     "static/js/3.bbcf7c80.chunk.js.map": "/cursor-react/static/js/3.bbcf7c80.chunk.js.map",
     "index.html": "/cursor-react/index.html",
-    "static/css/main.0f0eaed8.chunk.css.map": "/cursor-react/static/css/main.0f0eaed8.chunk.css.map",
+    "static/css/main.ab12bc99.chunk.css.map": "/cursor-react/static/css/main.ab12bc99.chunk.css.map",
     "static/js/2.1fadfbc2.chunk.js.LICENSE.txt": "/cursor-react/static/js/2.1fadfbc2.chunk.js.LICENSE.txt",
     "static/media/hw17.css": "/cursor-react/static/media/background.ceedb43d.png",
     "static/media/verified.23524915.svg": "/cursor-react/static/media/verified.23524915.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.9d5782f5.js",
     "static/js/2.1fadfbc2.chunk.js",
-    "static/css/main.0f0eaed8.chunk.css",
-    "static/js/main.45b64495.chunk.js"
+    "static/css/main.ab12bc99.chunk.css",
+    "static/js/main.492bf494.chunk.js"
   ]
 }
