@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(leaf.svg);
+  /*background: url(leaf.svg);*/
   min-height: 100vh;
   font-family: -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;

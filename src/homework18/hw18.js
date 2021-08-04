@@ -106,7 +106,7 @@ function Contact(props) {
                 <img src={contact_icon} className="user" alt="user"></img>
                 <span>{`${props.contact.firstName} ${props.contact.lastName}`}</span>
                 <span className="gender">
-                {props.contact.gender === "male" ? male : props.contact.gender === "female" ? female : unknown} alt="gender"
+                ${props.contact.gender === "male" ? male : props.contact.gender === "female" ? female : unknown} alt="gender"
                 </span> 
             </div>
             <p>{props.contact.phone}</p>
