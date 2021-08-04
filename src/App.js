@@ -7,6 +7,7 @@ import ContactList from './homework18/hw18';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import './App.css';
 
+
 function Links() {
   const clickHandler = (e) => {
   const links = document.querySelectorAll('.main_link');
@@ -21,8 +22,8 @@ function Links() {
   return (
       <div className='nav_links'>
           <Link className='main_link' to='/home' onClick={clickHandler}>Home</Link>
-          <Link className='main_link' to='/load' onClick={clickHandler}>Homework 17</Link>
-          <Link className='main_link' to='/contracts' onClick={clickHandler}>Homework 18</Link>
+          <Link className='main_link' to='/twitter_post' onClick={clickHandler}>Homework 17</Link>
+          <Link className='main_link' to='/contact_list' onClick={clickHandler}>Homework 18</Link>
       </div>
   )
 }
@@ -34,8 +35,8 @@ function App() {
         <Links />
           <div id="content">
             {/* <Route path='/' /> */}
-            <Route path='/load' component={Post}/>
-            <Route path='/contracts' component={ContactList}/>
+            <Route path='/twitter_post' component={Post}/>
+            <Route path='/contact_list' component={ContactList}/>
           </div>
       </React.Fragment>
     </Router>

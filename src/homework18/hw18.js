@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './hw18.css'
+import contact_icon from './contact-book.png'
 
-const male = 'https://image.flaticon.com/icons/png/512/1340/1340619.png';
-const female = 'https://image.flaticon.com/icons/png/512/766/766514.png';
-const unknown = 'https://image.flaticon.com/icons/png/512/57/57108.png';
-const user_icon = 'https://image.flaticon.com/icons/png/512/456/456212.png';
+const male = '&#9794;';
+const female = '&#9792;';
+const unknown = '&#x2047;';
 
 const contacts = [{
     id: 1,
@@ -45,18 +45,18 @@ const contacts = [{
     id: 7,
     firstName: "Tracy (The Mother)",
     lastName: "McConnell",
-    phone: "+380976319521",
+    phone: "+380688953248",
     gender: "female"
 },{
     id: 8,
     firstName: "Victoria",
     lastName: "the baker girl",
-    phone: "+380976589521",
+    phone: "+380932574895",
     gender: "female"
 },{
     id: 9,
     firstName: "The Captain",
-    lastName: "do not pick up!",
+    lastName: "",
     phone: "+380976589521",
     gender: "female"
 }
@@ -103,9 +103,11 @@ function Contact(props) {
     return(
         <div className="contact_box">
             <div className="content_box_user">
-                <img src={user_icon} className="user" alt="user"></img>
+                <img src={contact_icon} className="user" alt="user"></img>
                 <span>{`${props.contact.firstName} ${props.contact.lastName}`}</span>
-                <img className="gender" src={props.contact.gender === "male" ? male : props.contact.gender === "female" ? female : unknown} alt="gender"></img>
+                <span className="gender">
+                {props.contact.gender === "male" ? male : props.contact.gender === "female" ? female : unknown} alt="gender"
+                </span> 
             </div>
             <p>{props.contact.phone}</p>
             
