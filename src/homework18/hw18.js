@@ -8,40 +8,59 @@ const user_icon = 'https://image.flaticon.com/icons/png/512/456/456212.png';
 
 const contacts = [{
     id: 1,
-    firstName: "Барней",
-    lastName: "Стинсовський",
+    firstName: "Barney",
+    lastName: "Stinson",
     phone: "+380956319521",
     gender: "male"
 }, {
     id: 2,
-    firstName: "Робін",
-    lastName: "Щербатська",
+    firstName: "Robin",
+    lastName: "Scherbatsky",
     phone: "+380931460123",
     gender: "female"
 }, {
     id: 3,
-    firstName: "Анонімний",
-    lastName: "Анонімус",
+    firstName: "Unknown",
+    lastName: "number",
     phone: "+380666666666"
 }, {
     id: 4,
-    firstName: "Лілія",
-    lastName: "Олдровна",
+    firstName: "Lily",
+    lastName: "Aldrin",
     phone: "+380504691254",
     gender: "female"
 }, {
     id: 5,
-    firstName: "Маршен",
-    lastName: "Еріксонян",
+    firstName: "Marshall",
+    lastName: "Eriksen",
     phone: "+380739432123",
     gender: "male"
 }, {
     id: 6,
-    firstName: "Теодор",
-    lastName: "Мотсбес",
+    firstName: "Ted",
+    lastName: "Mosby",
     phone: "+380956319521",
     gender: "male"
-}];
+},{
+    id: 7,
+    firstName: "Tracy (The Mother)",
+    lastName: "McConnell",
+    phone: "+380976319521",
+    gender: "female"
+},{
+    id: 8,
+    firstName: "Victoria",
+    lastName: "the baker girl",
+    phone: "+380976589521",
+    gender: "female"
+},{
+    id: 9,
+    firstName: "The Captain",
+    lastName: "do not pick up!",
+    phone: "+380976589521",
+    gender: "female"
+}
+];
 
 
 
