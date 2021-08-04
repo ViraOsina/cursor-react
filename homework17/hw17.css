@@ -1,0 +1,124 @@
+html {
+    background-color:floralwhite;
+    background-image: url(background.png);
+    background-repeat: repeat;
+    
+  }
+  
+  .post {
+    background-color: #15202B;
+    padding: 15px;
+    margin: auto;
+    max-width: 900px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    display: flex;
+  }
+  
+  .header_icon {
+    padding: 10px;
+  }
+  
+  .header_icon > img{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .header_content {
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+    align-content: center;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .verified{
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    vertical-align: middle;
+  }
+  
+  .header_additional {
+    margin-left: 10px;
+    font-size: 22px;
+    color:#8393A0;
+  }
+  
+  .content {
+    font-size: 42px;
+    color:#8393A0;
+    width: max-content;
+    max-height: max-content;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .reveal_sign {
+    transform: rotate(180deg);
+    font-size: 36px;
+    color:#8393A0;
+    margin-left: 280px;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .verified > img {
+    width: 20px;
+    background-color: #15202B;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  
+  .content {
+    font-size: 22px;
+    color: white;
+  }
+  
+  .image {
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+  
+  .image > img{
+    border-radius: 40px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .icons {
+    display: flex;
+    margin-left: 140px;
+    padding-top: 15px;
+    color:#8393A0;
+    justify-content: space-between;
+    padding-right: 12%;
+    padding-left: 10px;
+  }
+  
+  .footer_icon {
+    font-size: 32px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .footer_value {
+    font-size: 24px;
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+  }
