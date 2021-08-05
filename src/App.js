@@ -10,20 +10,20 @@ import './App.css';
 
 function Links() {
   const clickHandler = (e) => {
-  const links = document.querySelectorAll('.main_link');
+  const links = document.querySelectorAll('.link');
 
       links.forEach(link => {
-          link.style.color = 'rgb(209, 209, 209)';
+          link.style.color = 'rgb( 36, 42, 29);';
       })
       
-      e.target.style.color = 'rgb(33, 219, 243)';
+      e.target.style.background = 'rgba( 49, 78, 15, 0.45);';
   }
 
   return (
-      <div className='nav_links'>
-          <Link className='main_link' to='/home' onClick={clickHandler}>Home</Link>
-          <Link className='main_link' to='/twitter_post' onClick={clickHandler}>Homework 17</Link>
-          <Link className='main_link' to='/contact_list' onClick={clickHandler}>Homework 18</Link>
+      <div className='navigation'>
+          <Link className='link' to='/home' onClick={clickHandler}>Home</Link>
+          <Link className='link' to='/twitter_post' onClick={clickHandler}>Homework 17</Link>
+          <Link className='link' to='/contact_list' onClick={clickHandler}>Homework 18</Link>
       </div>
   )
 }

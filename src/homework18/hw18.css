@@ -1,43 +1,36 @@
-html {
+.inner_box_hw18 {
     background: url(background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: -50px 20px;
+    display: flex;
 }
 .container_hw18 {
     border-radius: 5px;
-    max-width: 360px;
+    margin: 70px auto;
+    max-width: 250px;
     width: 100%;
-    height: 630px;
-    overflow:auto;
-    margin: 10px auto;
+    overflow: auto;
     display: flex;
     flex-direction: column;
-    
+    height: 80vh;
 }
 
-.inner {
-    width: 500px;
-    margin: 0 auto;
-    padding-top: 150px;
-    padding-bottom: 130px;
-    background-size:cover;
-    height: 950px;
-}
-
-.title {
+.title_hw18 {
     width: 100px;
     margin: 0 auto;
+    color: rgb(5, 91, 219);
 }
 
 .search_input {
-    width: 360px;
+    width: 220px;
     margin: 0 auto;
     padding: 5px;
     text-align: center;
     color: #353535;
     background: #d6d6d6;
-    font-weight: 700;
+    font-weight: 500;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -47,10 +40,13 @@ html {
     display: flex;
     justify-content: center;
     margin: 5px;
+    font-size: 12px;
+    align-content: space-between;
 }
 
-label {
-    margin: 5px;
+.filter_box label {
+    margin-left: 5px;
+    width: 30%;
 }
 label input {
     margin: 5px;
@@ -65,18 +61,22 @@ label input {
 .content_box_user {
     display: flex;
     align-items: center;
+    font-size: larger;
 }
 
 .contact_box p {
-    font-weight: 400;
+    font-weight:bold;
     margin: 5px;
     font-size: 12px;
+    color: rgb(5, 91, 219);
+    cursor: pointer;
 }
 
-.user {
+.user_hw18 {
     width: 25px;
+    margin-right: 5px;
 }
-.gender {
-    width: 15px;
+.gender_icon_hw18 >img {
+    max-width: 15px;
     margin: 5px;
 }

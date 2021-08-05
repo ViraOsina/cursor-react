@@ -14,34 +14,37 @@ body {
 }
 
 /* Navigation */
-.nav_links {
-  background-color: rgb(27, 27, 27);
+.navigation {
   position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
-  box-shadow: 0 0 27px 25px rgb(27, 27, 27);
+  background: rgba( 94, 164, 20, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
 }
 
-.main_link {
+.link {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(209, 209, 209);
+  color: rgb(63, 77, 64);
   padding: 15px;
 }
-.main_link:first-child {
-  color: rgb(33, 219, 243);
+.link:first-child {
+  background: rgba( 49, 78, 15, 0.45);
 }
 
-.main_link:hover {
-  color: rgb(33, 219, 243);
+.link:hover {
+  color: black;
+  background: rgba( 49, 78, 15, 0.45);
 }
 
 /* Content */
-#content {
-  margin-top: 80px;
-}
+/*#content {
+  padding-top: 50px;
+}*/
 
 
 
