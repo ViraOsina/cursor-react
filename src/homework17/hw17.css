@@ -1,11 +1,15 @@
-html {
+ .container_hw17 {
     background-color:floralwhite;
-    background-image: url(background.png);
+    background: url(background.png); 
     background-repeat: repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
     
   }
   
-  .post {
+  .post_hw17 {
     background-color: #15202B;
     padding: 15px;
     margin: auto;
@@ -15,28 +19,28 @@ html {
     border-radius: 10px;
   }
   
-  .header {
+  .header_hw17 {
     display: flex;
   }
   
-  .header_icon {
+  .header_icon_hw17 {
     padding: 10px;
   }
   
-  .header_icon > img{
+  .header_icon_hw17 > img{
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
   }
   
-  .header_content {
+  .header_content_hw17 {
     width: 100%;
     padding-left: 20px;
     position: relative;
     align-content: center;
   }
   
-  .name {
+  .name_hw17 {
     font-weight: bold;
     font-size: 24px;
     color: white;
@@ -56,8 +60,9 @@ html {
     color:#8393A0;
   }
   
-  .content {
+  .content_hw17 {
     font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
     color:#8393A0;
     width: max-content;
     max-height: max-content;
@@ -83,23 +88,23 @@ html {
     margin-left: 5px;
   }
   
-  .content {
+  .content_hw17 {
     font-size: 22px;
     color: white;
   }
   
-  .image {
+  .image_hw17 {
     margin-left: 100px;
     margin-right: 10px;
   }
   
-  .image > img{
+  .image_hw17 > img{
     border-radius: 40px;
     width: 100%;
     cursor: pointer;
   }
   
-  .icons {
+  .icons_hw17 {
     display: flex;
     margin-left: 140px;
     padding-top: 15px;
@@ -109,7 +114,7 @@ html {
     padding-left: 10px;
   }
   
-  .footer_icon {
+  .footer_icon_hw17 {
     font-size: 32px;
     margin-left: 5px;
     cursor: pointer;

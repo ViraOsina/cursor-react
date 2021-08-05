@@ -8,7 +8,7 @@
 }
 .container_hw18 {
     border-radius: 5px;
-    margin: 70px auto;
+    margin: 75px auto;
     max-width: 250px;
     width: 100%;
     overflow: auto;
@@ -61,7 +61,7 @@ label input {
 .content_box_user {
     display: flex;
     align-items: center;
-    font-size: larger;
+    font-size: 18px;
 }
 
 .contact_box p {

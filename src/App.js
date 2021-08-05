@@ -33,11 +33,11 @@ function App() {
     <Router>
       <React.Fragment>
         <Links />
-          <div id="content">
+          
             {/* <Route path='/' /> */}
             <Route path='/twitter_post' component={Post}/>
             <Route path='/contact_list' component={ContactList}/>
-          </div>
+          
       </React.Fragment>
     </Router>
   );
