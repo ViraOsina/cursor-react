@@ -1,9 +1,9 @@
  .container_hw17 {
-    background-color:floralwhite;
+    
     background: url(background.png); 
     background-repeat: repeat;
     background-attachment: fixed;
-    height: 100vh;
+    
     width: 100%;
     padding-top: 30px;
     
@@ -29,6 +29,7 @@
   
   .header_icon_hw17 > img{
     width: 100px;
+    height: 100px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -61,7 +62,7 @@
   }
   
   .content_hw17 {
-    font-size: 42px;
+    /*font-size: 30px;*/
     font-family: Arial, Helvetica, sans-serif;
     color:#8393A0;
     width: max-content;
@@ -71,16 +72,7 @@
     margin-top: 15px;
   }
   
-  .reveal_sign {
-    transform: rotate(180deg);
-    font-size: 36px;
-    color:#8393A0;
-    margin-left: 280px;
-    margin-right: 15px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
+ 
   .verified > img {
     width: 20px;
     background-color: #15202B;
@@ -91,6 +83,7 @@
   .content_hw17 {
     font-size: 22px;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .image_hw17 {
