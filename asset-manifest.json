@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/cursor-react/static/css/main.0fb19ab4.chunk.css",
-    "main.js": "/cursor-react/static/js/main.c17ddbb2.chunk.js",
-    "main.js.map": "/cursor-react/static/js/main.c17ddbb2.chunk.js.map",
-    "runtime-main.js": "/cursor-react/static/js/runtime-main.9d5782f5.js",
-    "runtime-main.js.map": "/cursor-react/static/js/runtime-main.9d5782f5.js.map",
-    "static/js/2.1fadfbc2.chunk.js": "/cursor-react/static/js/2.1fadfbc2.chunk.js",
-    "static/js/2.1fadfbc2.chunk.js.map": "/cursor-react/static/js/2.1fadfbc2.chunk.js.map",
-    "static/js/3.bbcf7c80.chunk.js": "/cursor-react/static/js/3.bbcf7c80.chunk.js",
-    "static/js/3.bbcf7c80.chunk.js.map": "/cursor-react/static/js/3.bbcf7c80.chunk.js.map",
+    "main.css": "/cursor-react/static/css/main.a5324764.chunk.css",
+    "main.js": "/cursor-react/static/js/main.e793167d.chunk.js",
+    "main.js.map": "/cursor-react/static/js/main.e793167d.chunk.js.map",
+    "runtime-main.js": "/cursor-react/static/js/runtime-main.cfe0e1d9.js",
+    "runtime-main.js.map": "/cursor-react/static/js/runtime-main.cfe0e1d9.js.map",
+    "static/js/2.846be1ce.chunk.js": "/cursor-react/static/js/2.846be1ce.chunk.js",
+    "static/js/2.846be1ce.chunk.js.map": "/cursor-react/static/js/2.846be1ce.chunk.js.map",
+    "static/js/3.fab6297e.chunk.js": "/cursor-react/static/js/3.fab6297e.chunk.js",
+    "static/js/3.fab6297e.chunk.js.map": "/cursor-react/static/js/3.fab6297e.chunk.js.map",
     "index.html": "/cursor-react/index.html",
-    "static/css/main.0fb19ab4.chunk.css.map": "/cursor-react/static/css/main.0fb19ab4.chunk.css.map",
-    "static/js/2.1fadfbc2.chunk.js.LICENSE.txt": "/cursor-react/static/js/2.1fadfbc2.chunk.js.LICENSE.txt",
+    "static/css/main.a5324764.chunk.css.map": "/cursor-react/static/css/main.a5324764.chunk.css.map",
+    "static/js/2.846be1ce.chunk.js.LICENSE.txt": "/cursor-react/static/js/2.846be1ce.chunk.js.LICENSE.txt",
     "static/media/hw17.css": "/cursor-react/static/media/background.ceedb43d.png",
     "static/media/contact-book.38d43d01.png": "/cursor-react/static/media/contact-book.38d43d01.png",
     "static/media/verified.23524915.svg": "/cursor-react/static/media/verified.23524915.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d5782f5.js",
-    "static/js/2.1fadfbc2.chunk.js",
-    "static/css/main.0fb19ab4.chunk.css",
-    "static/js/main.c17ddbb2.chunk.js"
+    "static/js/runtime-main.cfe0e1d9.js",
+    "static/js/2.846be1ce.chunk.js",
+    "static/css/main.a5324764.chunk.css",
+    "static/js/main.e793167d.chunk.js"
   ]
 }
