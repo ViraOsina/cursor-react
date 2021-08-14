@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './hw18.css'
 import contact_icon from './contact-book.png'
+import background from './background.png'
 
 const MALE_ICON = "https://image.flaticon.com/icons/png/512/1340/1340619.png";
 const FEMALE_ICON = "https://image.flaticon.com/icons/png/512/866/866954.png";
@@ -167,6 +168,7 @@ function ContactList() {
 
     return(
         <div className="inner_box_hw18">
+            <img src={background} alt="background" className="inner_box_hw18_img"></img>
             <div className="container_hw18">
                 <h2 className="title_hw18">Contacts</h2>
                 <input 
@@ -181,6 +183,7 @@ function ContactList() {
                     <Contact key={contact.id} contact={contact}/>
                 )}
             </div>
+            
         </div>       
     ) 
 }
