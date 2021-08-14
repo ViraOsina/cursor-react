@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cursor-react/static/css/main.3c83e660.chunk.css",
-    "main.js": "/cursor-react/static/js/main.567fc88c.chunk.js",
-    "main.js.map": "/cursor-react/static/js/main.567fc88c.chunk.js.map",
+    "main.css": "/cursor-react/static/css/main.0fb19ab4.chunk.css",
+    "main.js": "/cursor-react/static/js/main.c17ddbb2.chunk.js",
+    "main.js.map": "/cursor-react/static/js/main.c17ddbb2.chunk.js.map",
     "runtime-main.js": "/cursor-react/static/js/runtime-main.9d5782f5.js",
     "runtime-main.js.map": "/cursor-react/static/js/runtime-main.9d5782f5.js.map",
     "static/js/2.1fadfbc2.chunk.js": "/cursor-react/static/js/2.1fadfbc2.chunk.js",
@@ -10,17 +10,16 @@
     "static/js/3.bbcf7c80.chunk.js": "/cursor-react/static/js/3.bbcf7c80.chunk.js",
     "static/js/3.bbcf7c80.chunk.js.map": "/cursor-react/static/js/3.bbcf7c80.chunk.js.map",
     "index.html": "/cursor-react/index.html",
-    "static/css/main.3c83e660.chunk.css.map": "/cursor-react/static/css/main.3c83e660.chunk.css.map",
+    "static/css/main.0fb19ab4.chunk.css.map": "/cursor-react/static/css/main.0fb19ab4.chunk.css.map",
     "static/js/2.1fadfbc2.chunk.js.LICENSE.txt": "/cursor-react/static/js/2.1fadfbc2.chunk.js.LICENSE.txt",
     "static/media/hw17.css": "/cursor-react/static/media/background.ceedb43d.png",
-    "static/media/hw18.css": "/cursor-react/static/media/background.fef60c82.png",
     "static/media/contact-book.38d43d01.png": "/cursor-react/static/media/contact-book.38d43d01.png",
     "static/media/verified.23524915.svg": "/cursor-react/static/media/verified.23524915.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9d5782f5.js",
     "static/js/2.1fadfbc2.chunk.js",
-    "static/css/main.3c83e660.chunk.css",
-    "static/js/main.567fc88c.chunk.js"
+    "static/css/main.0fb19ab4.chunk.css",
+    "static/js/main.c17ddbb2.chunk.js"
   ]
 }
