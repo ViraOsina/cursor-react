@@ -23,6 +23,8 @@ body {
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
+ /* display: flex;
+  flex-direction: column;*/
 }
 
 .link {
@@ -32,7 +34,7 @@ body {
   color: rgb(63, 77, 64);
   padding: 15px;
 }
-.link:first-child {
+.link.selected {
   background: rgba( 49, 78, 15, 0.45);
 }
 
