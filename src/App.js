@@ -25,7 +25,7 @@ function Links() {
           <NavLink className='link' to='/home' onClick={clickHandler} activeClassName={"selected"}>Home</NavLink>
           <NavLink className='link' to='/twitter_post' onClick={clickHandler} activeClassName={"selected"}>Homework 17</NavLink>
           <NavLink className='link' to='/contact_list' onClick={clickHandler} activeClassName={"selected"}>Homework 18</NavLink>
-          <NavLink className='link' to='/spa' onClick={clickHandler} activeClassName={"selected"}>Homework 20</NavLink>
+          <NavLink className='link' to='/spa/home' onClick={clickHandler} activeClassName={"selected"}>Homework 20</NavLink>
       </div>
   )
 }
@@ -39,7 +39,7 @@ function App() {
             {/* <Route path='/' /> */}
             <Route path='/twitter_post' component={Post}/>
             <Route path='/contact_list' component={ContactList}/>
-            <Route path='/spa' component={SPA}/>
+            <Route path='/spa/home' component={SPA}/>
           
       </React.Fragment>
     </Router>

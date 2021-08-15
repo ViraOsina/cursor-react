@@ -132,7 +132,20 @@
 }
 
 /*photos*/
+.gallery_container{
+    width:fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+}
 
+.gallery_image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+}
 
 /*contacts*/
 div.inner_box_hw20 {
