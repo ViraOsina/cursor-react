@@ -7,44 +7,31 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
-export const Form = styled.form`
-    width: 300px;
+export const FormContainer = styled.div`
+    height: auto;
+    width: 400px;
     display: flex;
     flex-direction: column;
-    .form-header, .form-body, .form-footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 25px;
-    }
-    .form-check{
-        align-self: flex-start;
-        display: flex;
-        align-items: center;
-    }
-    .form-redirect{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .form-redirect .redirect-link{
-        color: #90CAF9;
-        font-size: 0.7rem;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    &.sign-up .form-redirect{
-        justify-content: flex-end;
-    }
-    .input-group{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+    background-color: rgb(68,41,80);
+    color: rgb(255,255,255);
+    border-radius: 15px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 10px;
+`;
+
+export const Header = styled.div`
+    display: flex;
+    height: 100%;
+    Width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(68,41,80);
 `;
 
 export const Icon = styled.div`
-    background: #F48FB2;
+    background: rgb(244,143,178);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -53,22 +40,32 @@ export const Icon = styled.div`
     align-items: center;
     padding: 10px;
     align-self: center;
+
     .icon-image{
         width: 1.5rem;
         height: 1.5rem;
+        background: rgb(244,143,178);
     }
 `;
 
 export const Title = styled.h2`
-    color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     margin-top: 10px;
+    background-color: rgb(68,41,80);
 `;
 
-export const Input = styled.input`
+export const Body = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: rgb(68,41,80);
+`;
+
+export const InputForm = styled.input`
     width: 100%;
     color: #fff;
     border: 1px solid rgba(255,255,255, 0.3);
@@ -76,8 +73,7 @@ export const Input = styled.input`
     padding: 15px 10px;
     font-size: 0.8rem;
     margin-bottom: 15px;
-    background: transparent;
-    border-color: ${({ valid }) => valid === 'correct' ? '#53F96F' : valid === '' ? 'rgba(255, 255, 255, 0.3)' : '#F95359'};
+    background-color: rgb(68,41,80);
     &:hover,
 	&:focus {
 		outline: none;
@@ -93,49 +89,90 @@ export const Input = styled.input`
     }
 `;
 
-export const Label = styled.label`
-    font-size: 0.8rem;
-    color: rgba(255,255,255, 0.8);
+export const NameInput = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(68,41,80);
+`;
+
+export const CheckBoxLine = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-self: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    background-color: rgb(68,41,80);
 `;
 
 export const Checkbox = styled.input`
-   border: 2px solid #fff;
-   background: #000;
-   .form-check &{
-       margin-right: 10px;
-   }
+   border: 2px solid rgb(255,255,255);
+   background-color: rgb(68,41,80);
+`;
+
+export const RememberMe = styled.div`
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: rgba(255,255,255, 0.8);
+    background: rgb(68,41,80);
+    margin-left: 12px;
+`;
+
+export const Footer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: rgb(68,41,80);
+`;
+
+export const RedirectLink = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    background-color: rgb(68,41,80);
+
+    .redirect-link {
+        color: rgb(244,143,178);
+        font-weight: 400;
+        letter-spacing: normal;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: rgb(68,41,80);
+    }
+
+    .redirect-link-sign-up {
+        color: rgb(244,143,178);
+        font-weight: 400;
+        letter-spacing: normal;
+        margin-left: 10px;
+        
+        text-decoration: none;
+        cursor: pointer;
+        background-color: rgb(68,41,80);
+        margin-left: 55%;
+    }
 `;
 
 export const Button = styled.button`
     width: 100%;
-    color: #000;
+    color: rgb(0,0,0);
     text-align: center;
     text-transform: uppercase;
     border-radius: 4px;
     padding: 10px;
     font-size: 0.8rem;
     margin-bottom: 15px;
-    background: #90CAF9;
+    background: rgb(144,202,249);
     font-weight: 500;
     cursor: pointer;
-`;
 
-export const HomeContent = styled.div`
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-`;
-
-export const HomeTitle = styled.h1`
-    color: #fff;
-    font-size: 2rem;
-    font-size: 600;
-    line-height: 1.5;
-    margin-bottom: 20px;
-`;
-
-export const ErrorMessage = styled(Title)`
-    color: #F95359;
-    font-size: 0.9rem;
-    display: ${props => props.show ? 'block' : 'none'};
+    &:hover {
+        background: rgb(122, 163, 196); 
+    }
 `;

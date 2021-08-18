@@ -1,142 +1,172 @@
-import { useState, useEffect } from "react";
-import {Link, Redirect} from 'react-router-dom';
-//import regulars from './regularExp';
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { useState } from 'react';
 
-import { Wrapper, Form, Icon, Title, Input, Label, Checkbox, Button } from './styles';
+import { 
+    FormContainer, 
+    Icon, 
+    Title, 
+    InputForm, 
+    Header, 
+    Body, 
+    NameInput, 
+    CheckBoxLine, 
+    Checkbox, 
+    RememberMe,
+    Footer,
+    Button,
+    RedirectLink
+} from './styles';
 import icon from './padlock.svg';
 
 export default function SignUp() {
-
     const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 
-    const [emailValid, setEmailValid] = useState('');
-	const [passwordValid, setPasswordValid] = useState('');
-	const [firstNameValid, setFirstNameValid] = useState('');
-	const [lastNameValid, setLastNameValid] = useState('');
+    const [validEmail, setValidEmail] = useState('');
+	const [validPassword, setValidPassword] = useState('');
+	const [validFirstName, setValidFirstName] = useState('');
+	const [validLastName, setValidLastName] = useState('');
 
-    const [formValid, setFormValid] = useState(false);
-    const [registered, setRegistered] = useState(false);
-    const [signedIn, setSignedIn] = useState(false);
-
-    const handleInputChange = e => {
-        const prop = e.target.name;
+    function inputValuesStorage(e) {
+        const key = e.target.name;
         const value = e.target.value;
-        //let isCorrect = null;
+        const emailValidator = /^\S{3,}@\S{2,}\.\D{2,}/;
+        const nameValidator = /[^\W\d_]{2,}/;
+        const passwordValidator = /^(?=.*?[A-Z])(?=.*?[a-z]).{8,}$/;
 
-        switch (prop){
+        let validInput = null;
+
+        switch (key){
             case 'email': 
                 setEmail(value);
-                //isCorrect = regulars.email.test(value);
-                //setEmailValid(isCorrect ? 'correct' : 'error');
+                validInput = emailValidator.test(value);
+                setValidEmail(validInput ? 'valid' : 'invalid');              
                 break;
             case 'password': 
                 setPassword(value);
-                //isCorrect = regulars.password.test(value);
-                //setPasswordValid(isCorrect ? 'correct' : 'error');
+                validInput = passwordValidator.test(value);
+                setValidPassword(validInput ? 'valid' : 'invalid'); 
                 break;
             case 'firstName': 
                 setFirstName(value);
-                //isCorrect = regulars.firstName.test(value);
-                //setFirstNameValid(isCorrect ? 'correct' : 'error');
+                validInput = nameValidator.test(value);
+                setValidFirstName(validInput ? 'valid' : 'invalid'); 
                 break;    
             case 'lastName': 
                 setLastName(value);
-                //isCorrect = regulars.lastName.test(value);
-                //setLastNameValid(isCorrect ? 'correct' : 'error');
+                validInput = nameValidator.test(value);
+                setValidLastName(validInput ? 'valid' : 'invalid'); 
                 break;    
             default: break;
         }
+
+        if( validEmail === "invalid" ){
+            e.target.style = 'border-color: rgb(244,27,27)';
+        } else if (validEmail === "valid") {
+            e.target.style = 'border-color: rgb(66,199,89)';
+        } 
+
+        if( validPassword === "invalid" ){
+            e.target.style = 'border-color: rgb(244,27,27)';
+        } else if (validPassword === "valid") {
+            e.target.style = 'border-color: rgb(66,199,89)';
+        } 
+
+        if( validFirstName === "valid" ){
+            e.target.style = 'border-color: rgb(66,199,89)';
+        } else if (validFirstName === "invalid") {
+            e.target.style = 'border-color: rgb(244,27,27)';
+        } 
+
+        if( validLastName === "valid" ){
+            e.target.style = 'border-color: rgb(66,199,89)';
+        } else if ( validLastName === "invalid" ) {
+            e.target.style = 'border-color: rgb(244,27,27)';
+        } 
     }
 
-    useEffect(() => {
-        setFormValid(
-            emailValid === 'correct' &&
-            passwordValid === 'correct' &&
-            firstNameValid === 'correct' &&
-            lastNameValid === 'correct'
-        );
-    }, [emailValid, passwordValid, firstNameValid, lastNameValid]);
+    const history = useHistory();
 
+    function signUp (e) {
+        if( validEmail === "valid" &&
+            validPassword === "valid" &&
+            validFirstName === "valid" &&
+            validLastName === "valid") {
 
-    const handleSignUp = e => {
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-        localStorage.setItem('firstName', firstName);
-        localStorage.setItem('lastName', lastName);
-
-        if (formValid){
-            setRegistered(!registered);
-            setSignedIn(!signedIn);
-        }
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('lastName', lastName);
+            localStorage.setItem('registered', true);
+            localStorage.setItem('signedIn', true);
+          
+        } 
+        history.push('/login/loggedin');
     }
-
-    if (registered){
-        localStorage.setItem('registered', registered);
-        localStorage.setItem('signedIn', signedIn);
-        return <Redirect to='/login/loggedin'/>
-    }
-
+    
+    
     return (
-        <Wrapper>
-            <Form className='sign-up'>
-                <div className="form-header">
-                    <Icon>
-                        <img className='icon-image' src={icon} alt="" />
-                    </Icon>
-                    <Title>Sign up</Title>
-                </div>
-                <div className="form-body">
-
-                    <div className="input-group">
-                        <Input 
-                            value={firstName} 
-                            onInput={handleInputChange} 
-                            placeholder='First name *' 
-                            type='text' 
-                            name='firstName' 
-                            valid={firstNameValid}
-                        />
-                        <Input 
-                            value={lastName}
-                            onInput={handleInputChange} 
-                            placeholder='Last name *' 
-                            type='text' 
-                            name='lastName' 
-                            valid={lastNameValid}
-                        />
-                    </div>
-                    <Input 
+        <FormContainer>
+            <Header>
+                <Icon><img className="icon-image" src={icon} alt = 'icon' /></Icon>
+                <Title>Sign up</Title>
+            </Header>
+            <Body>
+                <NameInput>
+                    <InputForm
+                        value={firstName} 
+                        onInput={inputValuesStorage} 
+                        placeholder='First name *' 
+                        type='text' 
+                        name='firstName' 
+                        valid={validFirstName}
+                        
+                    />
+                    <InputForm 
+                        value={lastName}
+                        onInput={inputValuesStorage} 
+                        placeholder='Last name *' 
+                        type='text' 
+                        name='lastName' 
+                        valid={validLastName}
+                        
+                    />
+                </NameInput>
+                    <InputForm
                         value={email} 
-                        onInput={handleInputChange} 
+                        onInput={inputValuesStorage} 
                         placeholder='Email Address *' 
                         type='email' 
-                        name='email' 
-                        valid={emailValid}
+                        name='email'
+                        valid={validEmail} 
+                        
                     />
-                    <Input 
+                    <InputForm
                         value={password} 
-                        onInput={handleInputChange} 
+                        onInput={inputValuesStorage} 
                         placeholder='Password *' 
                         type='password' 
-                        name='password' 
-                        valid={passwordValid}
+                        name='password'
+                        valid={validPassword} 
+                        
                     />
-
-                    <div className='form-check'>
-                        <Checkbox type='checkbox' id='remember-me' />
-                        <Label htmlFor='remember-me'>I want to receive inspiration, marketing promotions and updates via email</Label>
-                    </div>
-                </div>
-                <div className="form-footer">
-                    <Button onClick={handleSignUp} type='submit'>Sign up</Button>
-                    <div className="form-redirect">
-                        <Link className='redirect-link' to='/login/sign-in'>Already have an account? Sign in</Link>
-                    </div>
-                </div>
-            </Form>
-        </Wrapper>
+                <CheckBoxLine>
+                    <Checkbox type='checkbox' id='remember-me' />
+                    <RememberMe>
+                        I want to receive inspiration, marketing promotions and updates via email
+                    </RememberMe>
+                </CheckBoxLine>
+            </Body>
+            <Footer>
+                <Button onClick={signUp} type='submit'>Sign up</Button>
+                <RedirectLink>
+                    <Link className='redirect-link-sign-up' to='/login'>Already have an account? Sign in</Link>
+                </RedirectLink>
+            </Footer>
+        </FormContainer>
+        
     );
 }
