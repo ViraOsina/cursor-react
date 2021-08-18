@@ -9,10 +9,8 @@ for (let i = 0; i < gallerySize; i++) {
     imageArray = [...imageArray, {id: i+100, imageSourse: RANDOM_PHOTO+'+'+i}];
 }
 
-console.log(imageArray, "array");
-
 function ArrayOfImages (props) {
-    console.log(props, "props");
+    
     return (
         <div className="gallery_image">
             <img src={props.src} alt="gallery_image"></img>
